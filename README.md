@@ -26,7 +26,7 @@ chunks.map(chunk => submit(chunk))
 Function example for creatign chunks:
 
 ```js
-/Array.prototype.chunk = function (size) {
+Array.prototype.chunk = function (size) {
     return this.reduce((chunks, el, i) => (i % size ?
     chunks[chunks.length - 1].push(el) :
     chunks.push([el])) && chunks, []);
