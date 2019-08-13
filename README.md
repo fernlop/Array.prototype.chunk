@@ -23,7 +23,7 @@ chunks.map(chunk => submit(chunk))
 
 ```
 
-Function example for creatign chunks:
+Function example for creating chunks:
 
 ```js
 Array.prototype.chunk = function (size) {
