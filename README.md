@@ -57,7 +57,7 @@ _.chunk(['a', 'b', 'c', 'd'], 3);
 // => [['a', 'b', 'c'], ['d']]
 ```
 
-__ Requests / Discussions on the internet about this:__
+__Requests / Discussions on the internet about this:__
 
 >Split array into chunks
 https://stackoverflow.com/questions/8495687/split-array-into-chunks
@@ -80,26 +80,26 @@ https://stackoverflow.com/questions/8188548/splitting-a-js-array-into-n-arrays
 	
 Documentations about this:
 
->How to split an array into chunks of the same size easily in Javascript
+How to split an array into chunks of the same size easily in Javascript
 https://ourcodeworld.com/articles/read/278/how-to-split-an-array-into-chunks-of-the-same-size-easily-in-javascript
 
 	
->Four ways to chunk an array
+Four ways to chunk an array
 https://medium.com/@Dragonza/four-ways-to-chunk-an-array-e19c889eac4
 
->JavaScript: Chunk an array into smaller arrays of a specified size
+JavaScript: Chunk an array into smaller arrays of a specified size
 https://www.w3resource.com/javascript-exercises/fundamental/javascript-fundamental-exercise-265.php
 
 
->Split an array into chunks of a given size in JavaScript
+Split an array into chunks of a given size in JavaScript
 https://binbytes.com/blog/split-an-array-into-chunks-of-a-given-size-in-javascript
 
 
->Array Chunking
+Array Chunking
 https://scotch.io/courses/the-ultimate-guide-to-javascript-algorithms/array-chunking
 
 
->JavaScript: Split an array into chunks of a given size
+JavaScript: Split an array into chunks of a given size
 http://www.frontcoded.com/splitting-javascript-array-into-chunks.html
 
 
@@ -122,11 +122,11 @@ print_r(array_chunk($input_array, 2, true));
 
 I didn't find a built in solution for this in other languages but many requests for this functionality on stackoverflow:
 
->Java
+Java
 https://stackoverflow.com/questions/12026885/is-there-a-common-java-utility-to-break-a-list-into-batches
 https://stackoverflow.com/questions/19237371/split-array-into-pieces-of-x-length
 
->Python
+Python
 https://stackoverflow.com/questions/312443/how-do-you-split-a-list-into-evenly-sized-chunks
 https://stackoverflow.com/questions/2130016/splitting-a-list-into-n-parts-of-approximately-equal-length
 https://stackoverflow.com/questions/24483182/python-split-list-into-n-chunks/29679492
