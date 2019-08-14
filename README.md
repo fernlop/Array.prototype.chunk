@@ -1,14 +1,28 @@
 # Array.prototype.chunk
 
 > Proposal
+> Stage: Idea / looking for champion
 
-__Motivation:__
+## Motivation:
 
 Many api's or handlers of large datasets have a limit per request. A function to split an array of datasets into chunks with the size of the limit and then processing them could make this much easier.
  
-__Other usecases:__
+### Why would you need this?
 
-If found many questions on the internet about splitting an array into equal parts. You could solve this with Array.prototype.chunk the following way:
+##### API request limits:
+###### Many APIs can only process a limited number of datasets.
+
+Examples:
+
+- Amazon MWS API limits the number of orders you can request or send data for in one request. 
+
+- AWS DynamoDB API limits the number of items in a batchWrite or batchGet reqiest to 25 items.
+
+
+
+### Other usecases:
+
+If found many questions on the internet about splitting an array into equal parts. You could solve this with `Array.prototype.chunk` the following way:
 
 ```js
 const array = [1,2,3,4,5,6,7,8,9,10];
@@ -17,7 +31,7 @@ const equalChunks = array.chunk(array.length/2); // To create 2 equal parts
 
 ```
 
-__Proposal:__
+## Proposal:
 
 Have a `Array.prototype.chunk` method, they might look like:
 
@@ -33,7 +47,7 @@ chunks.map(chunk => submit(chunk))
 
 ```
 
-Function example for creating chunks:
+###### Function example for creating chunks:
 
 ```js
 Array.prototype.chunk = function (size) {
@@ -43,7 +57,7 @@ Array.prototype.chunk = function (size) {
 }
 ```
 
-__JS librarys using this:__
+## JS librarys using this:
 
 >Lodash: 
 
@@ -57,10 +71,9 @@ _.chunk(['a', 'b', 'c', 'd'], 3);
 // => [['a', 'b', 'c'], ['d']]
 ```
 
-__Requests / Discussions on the internet about this:__
+## Requests / Discussions on the internet about this:
 
->Split array into chunks
-https://stackoverflow.com/questions/8495687/split-array-into-chunks
+[Split array into chunks](https://stackoverflow.com/questions/8495687/split-array-into-chunks)
 
 
 >How do you split an array into array pairs in JavaScript?
@@ -78,7 +91,7 @@ https://stackoverflow.com/questions/8188548/splitting-a-js-array-into-n-arrays
 	https://stackoverflow.com/questions/31352141/how-do-you-split-an-array-into-array-pairs-in-javascript
 	
 	
-Documentations about this:
+__Documentations about this:__
 
 How to split an array into chunks of the same size easily in Javascript
 https://ourcodeworld.com/articles/read/278/how-to-split-an-array-into-chunks-of-the-same-size-easily-in-javascript
@@ -109,9 +122,9 @@ https://gist.github.com/webinista/11240585
 
 
 
-__How are other languages handling this?__
+## How are other languages handling this?
 
-__PHP:__ 
+#### PHP:
 ```php
 <?php
 $input_array = array('a', 'b', 'c', 'd', 'e');
